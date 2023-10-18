@@ -2,7 +2,7 @@
 # ДЗ: Доделать дома, пофиксить баг
 # ДЗ (*): Сделать удобное приложение (на любую тему)
 # Контакты: 89610647549 (whatsapp), https://t.me/enotit/, https://vk.com/enotit/
-# починил санек TheSashaBr https://github.com/TheSashaBr
+# починил Александр 'TheSashaBr' Оншин https://github.com/TheSashaBr
 # --------------------------------
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QLineEdit
