@@ -1,5 +1,6 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QLineEdit
+import math
 
 
 app = QApplication([])  # Создание приложения
@@ -28,6 +29,9 @@ def step_action():
     a = float(first.text())
     b = float(second.text())
     result.setText(f'Результат: {a**b}')
+def koren():
+    a = float(first.text())
+    result.setText(f'Результат: {math.sqrt(a)}')
 
 v_line = QVBoxLayout()
 first = QLineEdit()
@@ -50,11 +54,15 @@ mul.clicked.connect(mul_action)
 step = QPushButton('^')
 step.clicked.connect(step_action)
 
+kor = QPushButton('√')
+kor.clicked.connect(koren)
+
 h_line.addWidget(plus)
 h_line.addWidget(min)
 h_line.addWidget(div)
 h_line.addWidget(mul)
 h_line.addWidget(step)
+h_line.addWidget(kor)
 v_line.addLayout(h_line)
 
 second = QLineEdit()
