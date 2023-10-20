@@ -2,7 +2,8 @@
 # ДЗ: Доделать дома, пофиксить баг
 # ДЗ (*): Сделать удобное приложение (на любую тему)
 # Контакты: 89610647549 (whatsapp), https://t.me/enotit/, https://vk.com/enotit/
-# починил Александр 'TheSashaBr' Оншин https://github.com/TheSashaBr
+# Пофиксил баг Александр TheSashaBr https://github.com/TheSashaBr
+# Дописал код Михаил 0xo7nik https://github.com/0xo7nik
 # --------------------------------
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QLineEdit
@@ -53,7 +54,7 @@ div.clicked.connect(div_action)
 mul = QPushButton('⨉')
 mul.clicked.connect(mul_action)
 
-step = QPushButton('x²')
+step = QPushButton('^')
 step.clicked.connect(step_action)
 
 h_line.addWidget(plus)
